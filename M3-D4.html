@@ -1,7 +1,7 @@
 <!--<!DOCTYPE html>
 <html>
   <head>
-    <!--
+    
             You are creating the "shopping cart experience" for an Online Marketplace.
             From this API you can retrieve the list of the available books:
             https://striveschool-api.herokuapp.com/books
@@ -53,7 +53,13 @@
      <!-- === ===== CSS Internal Styles Section ==== ===== ===== -->
     
      <!-- === ===== End of CSS  ==== ===== ===== -->
-
+<style>
+  .text-ellipsis{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+</style>
   </head>
   <body>
   <!-- ////////////////////  Navbar Implementation ////////////////////// -->
@@ -116,7 +122,7 @@
               >
             </li>
           </ul>   <!-- === ===== End of Unordered List ==== ===== ===== -->
-          <div id="cart"><i class="bi bi-cart mr-2"></i><span>0</span></div>
+          <div ><i class="bi bi-cart mr-2"></i><span id="cart">0</span></div>
         </div>
       </div>
     </nav>     <!-- === ===== Navbar End ==== ===== ===== -->
@@ -136,9 +142,24 @@
           Search
         </button>
       </form>
+      </div>
 
-      <div class="toappend row mt-3"></div>
-    </div>
+<!--  ///////////////////////////////       -->
+      
+
+      <div class="container toappend">
+
+      </div>
+
+      <div class="container AddtoCart mt-4">
+        <h3 class="text-success mb-3"> Cart-List: </h3>
+          <div class="row mt-2 cartRow">
+
+          </div>
+
+
+      </div>
+    
 
      <!-- === ===== Script Section ==== ===== ===== -->
 
